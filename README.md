@@ -1,1 +1,1 @@
-# crawling_practice1
+# This repository is web crawling practice from Python Data Analysis class

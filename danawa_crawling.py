@@ -67,4 +67,3 @@ data = pd.read_excel('./0802/danawa_crawling_result.xlsx')
 data.info()
 print('-'*80)
 data.head()
-

@@ -6,7 +6,7 @@ from tqdm import tqdm_notebook
 import pandas as pd
 
 driver = webdriver.Chrome('chromedriver.exe')
-driver.implicitly_wait(2)
+driver.implicitly_wait(1)
 
 def get_prod_items(prod_items):
     
@@ -44,7 +44,7 @@ prod_data_total = []
 for page in tqdm_notebook(range(1, total_page+1)):
     driver.get(url)
     url = get_search_page_url(keyword, page)
-    time.sleep(3)
+    time.sleep(2)
     
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
